@@ -1,0 +1,42 @@
+<html>
+  <head>
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <style>
+ #b1{
+  background: url('https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
+ }
+ </style>
+
+<body id="b1">
+<div class="row mt-5 text-center">
+  <div class=" col-md-4 m-auto  text-center">
+    <div class="card card-body  text-center">
+      <h1 class="text-center mb-3"><i class=""></i> Login</h1>
+      <% include ./partials/messages %>
+      <form action="/operators/login" method="POST">
+        <div class="form-group ">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email id" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" class="form-control " placeholder="Enter your Password" />
+        </div>
+        <button type="submit" class="btn btn-danger ">Login</button>
+      </form>
+      <p class="lead mt-4">
+        Click on <a href="/operators/register">Register</a> to Signup
+      </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
